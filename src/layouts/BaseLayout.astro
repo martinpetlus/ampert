@@ -28,7 +28,15 @@ const contactHref = getRelativeLocaleUrl(
       type="image/svg+xml"
       href={`${base.replace(/\/$/, "")}/favicon.svg`}
     />
-    <link rel="icon" href={`${base.replace(/\/$/, "")}/favicon.ico`} />
+    <link
+      rel="icon"
+      type="image/png"
+      href={`${base.replace(/\/$/, "")}/favicon.png`}
+    />
+    <link
+      rel="apple-touch-icon"
+      href={`${base.replace(/\/$/, "")}/favicon.png`}
+    />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
