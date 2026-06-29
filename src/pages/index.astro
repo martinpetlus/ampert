@@ -1,0 +1,11 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { useTranslations } from "../i18n/ui";
+
+const t = useTranslations("sk");
+---
+
+<BaseLayout>
+  <h1 class="text-4xl font-bold tracking-tight">{t("hero.title")}</h1>
+  <p class="mt-4 text-lg text-slate-600">{t("hero.subtitle")}</p>
+</BaseLayout>

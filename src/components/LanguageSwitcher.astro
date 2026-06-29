@@ -1,0 +1,31 @@
+---
+import { languages, defaultLang, type Lang } from "../i18n/ui";
+
+const current = (Astro.currentLocale ?? defaultLang) as Lang;
+
+// Map each locale to its home URL. Slovak (default) has no prefix.
+const localeHref: Record<Lang, string> = {
+  sk: "/",
+  en: "/en/",
+};
+---
+
+<nav aria-label="Language switcher" class="flex gap-2 text-sm">
+  {
+    (Object.keys(languages) as Lang[]).map((lang) => (
+      <a
+        href={localeHref[lang]}
+        hreflang={lang}
+        aria-current={lang === current ? "true" : undefined}
+        class:list={[
+          "rounded px-2 py-1 transition-colors",
+          lang === current
+            ? "bg-slate-900 text-white"
+            : "text-slate-600 hover:bg-slate-200",
+        ]}
+      >
+        {languages[lang]}
+      </a>
+    ))
+  }
+</nav>
