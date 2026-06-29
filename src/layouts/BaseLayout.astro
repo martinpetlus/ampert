@@ -33,7 +33,15 @@ const homeHref = getRelativeLocaleUrl(lang, "");
     <header
       class="flex items-center justify-between border-b border-slate-200 px-6 py-4"
     >
-      <a href={homeHref} class="font-semibold">{t("site.title")}</a>
+      <a href={homeHref} class="font-semibold">
+        <img
+          src={`${base.replace(/\/$/, "")}/logo.svg`}
+          alt={t("site.title")}
+          width="110"
+          height="32"
+          class="h-8 w-auto"
+        />
+      </a>
       <LanguageSwitcher />
     </header>
     <main class="mx-auto max-w-3xl px-6 py-12">
