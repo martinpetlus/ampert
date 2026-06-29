@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import { getRelativeLocaleUrl } from "astro:i18n";
 import LanguageSwitcher from "../components/LanguageSwitcher.astro";
 import { defaultLang, type Lang, useTranslations } from "../i18n/ui";
 
@@ -10,14 +11,20 @@ interface Props {
 const lang = (Astro.currentLocale ?? defaultLang) as Lang;
 const t = useTranslations(lang);
 const { title = t("site.title") } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const homeHref = getRelativeLocaleUrl(lang, "");
 ---
 
 <!doctype html>
 <html lang={lang}>
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href={`${base.replace(/\/$/, "")}/favicon.svg`}
+    />
+    <link rel="icon" href={`${base.replace(/\/$/, "")}/favicon.ico`} />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
@@ -26,9 +33,7 @@ const { title = t("site.title") } = Astro.props;
     <header
       class="flex items-center justify-between border-b border-slate-200 px-6 py-4"
     >
-      <a href={lang === "en" ? "/en/" : "/"} class="font-semibold"
-        >{t("site.title")}</a
-      >
+      <a href={homeHref} class="font-semibold">{t("site.title")}</a>
       <LanguageSwitcher />
     </header>
     <main class="mx-auto max-w-3xl px-6 py-12">

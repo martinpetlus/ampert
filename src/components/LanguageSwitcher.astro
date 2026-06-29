@@ -1,12 +1,13 @@
 ---
+import { getRelativeLocaleUrl } from "astro:i18n";
 import { languages, defaultLang, type Lang } from "../i18n/ui";
 
 const current = (Astro.currentLocale ?? defaultLang) as Lang;
 
-// Map each locale to its home URL. Slovak (default) has no prefix.
+// Map each locale to its home URL (base path + locale handled by Astro).
 const localeHref: Record<Lang, string> = {
-  sk: "/",
-  en: "/en/",
+  sk: getRelativeLocaleUrl("sk", ""),
+  en: getRelativeLocaleUrl("en", ""),
 };
 ---
 

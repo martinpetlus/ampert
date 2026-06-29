@@ -24,6 +24,7 @@ jobs:
         uses: withastro/action@v4
         with:
           package-manager: pnpm
+          node-version: 26
   deploy:
     needs: build
     runs-on: ubuntu-latest
