@@ -13,7 +13,7 @@ export const ui = {
     "site.title": "AMP Systems",
     "hero.title": "Vitajte v AMP Systems",
     "hero.subtitle":
-      "Statická webová stránka postavená na Astro s podporou viacerých jazykov.",
+      "Udržiavame vaše výrobné linky v chode a meníme ich dáta na prehľadné informácie a AI riešenia.",
     "lang.switch": "Jazyk",
     "nav.contact": "Kontakt",
     "nav.services": "Služby",
@@ -32,7 +32,7 @@ export const ui = {
     "site.title": "AMP Systems",
     "hero.title": "Welcome to AMP Systems",
     "hero.subtitle":
-      "A static website built with Astro and multi-language support.",
+      "We keep your production lines running and turn their data into clear insights and AI solutions.",
     "lang.switch": "Language",
     "nav.contact": "Contact",
     "nav.services": "Services",
