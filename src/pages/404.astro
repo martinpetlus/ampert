@@ -1,0 +1,26 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getRelativeLocaleUrl } from "astro:i18n";
+import { useTranslations } from "../i18n/ui";
+import { routes } from "../i18n/routes";
+
+const t = useTranslations("sk");
+const homeHref = getRelativeLocaleUrl("sk", routes.home.sk);
+---
+
+<BaseLayout title={`404 | ${t("site.title")}`}>
+  <div class="py-12 text-center">
+    <p class="text-6xl font-bold tracking-tight text-sky-600">404</p>
+    <h1 class="mt-4 text-3xl font-bold tracking-tight">
+      {t("notFound.title")}
+    </h1>
+    <p class="mt-2 text-slate-600">{t("notFound.message")}</p>
+    <a
+      href={homeHref}
+      class="mt-8 inline-flex items-center gap-1 rounded-lg bg-slate-900 px-5 py-2.5 font-medium text-white transition hover:bg-slate-700"
+    >
+      <span aria-hidden="true">←</span>
+      {t("notFound.home")}
+    </a>
+  </div>
+</BaseLayout>

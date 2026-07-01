@@ -29,6 +29,10 @@ export const ui = {
     "contact.phoneLabel": "Telefón",
     "contact.phone": "+421 915 425 052",
     "services.home.cta": "Zobraziť všetky služby",
+    "notFound.title": "Stránka sa nenašla",
+    "notFound.message":
+      "Ľutujeme, požadovaná stránka neexistuje alebo bola presunutá.",
+    "notFound.home": "Späť na domovskú stránku",
   },
   en: {
     "nav.home": "Home",
@@ -50,6 +54,10 @@ export const ui = {
     "contact.phoneLabel": "Phone",
     "contact.phone": "+421 915 425 052",
     "services.home.cta": "View all services",
+    "notFound.title": "Page not found",
+    "notFound.message":
+      "Sorry, the page you are looking for does not exist or has been moved.",
+    "notFound.home": "Back to home",
   },
 } as const;
 
