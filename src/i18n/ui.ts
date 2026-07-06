@@ -10,10 +10,10 @@ export const defaultLang: Lang = "sk";
 export const ui = {
   sk: {
     "nav.home": "Domov",
-    "site.title": "AMP Systems",
+    "site.title": "AMP Machines",
     "site.description":
       "Priemyselná automatizácia, opravy výrobných liniek, spracovanie dát a AI riešenia pre výrobné firmy.",
-    "hero.title": "Vitajte v AMP Systems",
+    "hero.title": "Vitajte v AMP Machines",
     "hero.subtitle":
       "Udržiavame vaše výrobné linky v chode a meníme ich dáta na prehľadné informácie a AI riešenia.",
     "lang.switch": "Jazyk",
@@ -25,12 +25,12 @@ export const ui = {
     "contact.intro":
       "Radi vám pomôžeme. Ozvite sa nám e-mailom alebo telefonicky.",
     "contact.emailLabel": "E-mail",
-    "contact.email": "kontakt@amp-systems.sk",
+    "contact.email": "kontakt@amp-machines.sk",
     "contact.phoneLabel": "Telefón",
     "contact.phone": "+421 915 425 052",
     "contact.copy": "Kopírovať",
     "contact.copied": "Skopírované",
-    "contact.mailSubject": "Dopyt z webu AMP Systems",
+    "contact.mailSubject": "Dopyt z webu AMP Machines",
     "contact.mailBody": "Dobrý deň,\n\n",
     "services.home.cta": "Zobraziť všetky služby",
     "notFound.title": "Stránka sa nenašla",
@@ -41,10 +41,10 @@ export const ui = {
   },
   en: {
     "nav.home": "Home",
-    "site.title": "AMP Systems",
+    "site.title": "AMP Machines",
     "site.description":
       "Industrial automation, production line repairs, data processing and AI solutions for manufacturing companies.",
-    "hero.title": "Welcome to AMP Systems",
+    "hero.title": "Welcome to AMP Machines",
     "hero.subtitle":
       "We keep your production lines running and turn their data into clear insights and AI solutions.",
     "lang.switch": "Language",
@@ -55,12 +55,12 @@ export const ui = {
     "contact.title": "Contact",
     "contact.intro": "We'd love to hear from you — reach us by email or phone.",
     "contact.emailLabel": "Email",
-    "contact.email": "contact@amp-systems.sk",
+    "contact.email": "contact@amp-machines.sk",
     "contact.phoneLabel": "Phone",
     "contact.phone": "+421 915 425 052",
     "contact.copy": "Copy",
     "contact.copied": "Copied",
-    "contact.mailSubject": "Inquiry from the AMP Systems website",
+    "contact.mailSubject": "Inquiry from the AMP Machines website",
     "contact.mailBody": "Hello,\n\n",
     "services.home.cta": "View all services",
     "notFound.title": "Page not found",

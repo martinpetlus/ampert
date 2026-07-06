@@ -9,7 +9,7 @@ export default defineConfig({
   // Default GitHub Pages project URL. Switch to your custom domain (and base: "/") later.
   site: "https://martinpetlus.github.io",
 
-  base: "/amp-systems",
+  base: "/amp-machines",
 
   i18n: {
     defaultLocale: "sk",
